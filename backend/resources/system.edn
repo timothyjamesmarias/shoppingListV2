@@ -1,0 +1,11 @@
+{:server/jetty {:handler #ig/ref :server/routes
+               :port 3000
+               :join? false}
+
+ :server/routes {:db #ig/ref :db/postgres}
+
+ :db/postgres {:jdbc-url "jdbc:postgresql://localhost:5432/shopping_list"}
+
+ :db/migratus {:store :database
+               :migration-dir "migrations"
+               :db {:jdbcUrl "jdbc:postgresql://localhost:5432/shopping_list"}}}
