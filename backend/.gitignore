@@ -6,4 +6,4 @@ tmp/
 .lsp/
 .clj-kondo/
 .cpcache/
-.nrepl-port/
+.nrepl-port

@@ -4,8 +4,8 @@
 
  :server/routes {:db #ig/ref :db/postgres}
 
- :db/postgres {:jdbc-url "jdbc:postgresql://localhost:5432/shopping_list"}
+ :db/postgres {:jdbc-url "jdbc:postgresql://localhost:5432/shopping_list_v2?user=postgres&password=postgres"}
 
  :db/migratus {:store :database
                :migration-dir "migrations"
-               :db {:jdbcUrl "jdbc:postgresql://localhost:5432/shopping_list"}}}
+               :db {:jdbcUrl "jdbc:postgresql://localhost:5432/shopping_list_v2?user=postgres&password=postgres"}}}

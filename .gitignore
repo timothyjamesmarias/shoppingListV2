@@ -5,3 +5,4 @@ tmp/
 
 .lsp/
 .clj-kondo/
+.nrepl-port
