@@ -6,13 +6,13 @@
 (defn get-lists [db]
   (jdbc/execute! db
                  (sql/format {:select [:id :name :created_at]
-                              :form [:shopping_lists]})
+                              :from [:lists]})
                  {:builder-fn rs/as-unqualified-kebab-maps}))
 
 (defn ->list-dto [row]
   {:id (:id row)
    :name (:name row)
-   :created-at (str (:created-at row))})
+   :created_at (str (:created_at row))})
 
 (defn list-all [db]
   (->> (get-lists db)

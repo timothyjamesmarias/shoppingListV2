@@ -1,4 +1,4 @@
-name: shopping_list
+name: shopping_list_v2
 services:
   postgres:
     image: postgres:17
